@@ -1,0 +1,39 @@
+server:
+  port: 8080
+
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+      - org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration
+
+
+#server:
+#  port: 8080
+#
+#spring:
+#  application:
+#    name: ai-software-architect
+#
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/archai
+#    username: archai
+#    password: archai
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: validate
+#    show-sql: true
+#
+#  flyway:
+#    enabled: true
+#
+#  data:
+#    redis:
+#      host: localhost
+#      port: 6379
+#
+#logging:
+#  level:
+#    root: INFO
